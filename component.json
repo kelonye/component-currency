@@ -1,0 +1,13 @@
+{
+  "name": "component-currency",
+  "version": "0.0.1",
+  "development": {
+    "timoxley/assert": "*"
+  },
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js",
+    "lib/currencies.js"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+syntax: glob
+
+public
+components
+node_modules
+npm-debug.log

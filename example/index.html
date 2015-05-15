@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    <script src='../public/public.js'></script>
+    <script src='fixtures.js'></script>
+    <script type='text/javascript'>
+
+      var fn = require('component-currency');
+
+      var el = [
+        '<table>',
+        '<tbody>',
+        '<tr><td>Currency</td><td>Number</td><td>Result</td></tr>',
+      ];
+
+      for (var currency in fixtures){
+        fixtures[currency].forEach(function(number){
+          el.push('<tr><td>'+currency+'</td><td>'+number+'</td><td>'+fn(currency)(number)+'</td></tr>');
+        });
+      }
+
+      el = el.join('') + '</tbody></table>';
+
+      document.write(el);
+
+    </script>
+  </body>
+</html>

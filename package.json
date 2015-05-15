@@ -1,0 +1,9 @@
+{
+  "name": "component-currency",
+  "version": "0.0.1",
+  "devDependencies": {
+    "mocha": "*",
+    "component-hooks": "*"
+  },
+  "license": "MIT"
+}
