@@ -29,11 +29,11 @@ console.log(eur(7000.01));    // 7.000,01 => format
 
 var opts = {
   sep: ' ',
-  dec: '@'
+  dec: '^'
 };
 var custom = currency(opts);
-console.log(custom('7 000.01')); // 7000.01  => parse
-console.log(custom(7000.01));    // 7 000.01 => format
+console.log(custom('7 000^01')); // 7000.01  => parse
+console.log(custom(7000.01));    // 7 000^01 => format
 
 ```
 
