@@ -16,7 +16,7 @@ example: default
 	@xdg-open example/index.html
 
 test: default
-	@xdg-open test/support.html
+	@open test/support.html
 
 clean:
 	@rm -rf public

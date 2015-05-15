@@ -1,4 +1,4 @@
-Curencies
+Currencies
 ---
 
 - usd
@@ -15,10 +15,25 @@ Example
 
 ```javascript
 
-var eur = require('component-currency')('eur');
+// currency
 
+var currency = require('component-currency');
+
+// eur
+
+var eur = currency('eur');
 console.log(eur('7.000,01')); // 7000.01  => parse
 console.log(eur(7000.01));    // 7.000,01 => format
+
+// custom
+
+var opts = {
+  sep: ' ',
+  dec: '@'
+};
+var custom = currency(opts);
+console.log(custom('7 000.01')); // 7000.01  => parse
+console.log(custom(7000.01));    // 7 000.01 => format
 
 ```
 
